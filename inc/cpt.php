@@ -65,7 +65,7 @@ function create_presentation_cpt() {
     'show_in_rest' => true,
     'publicly_queryable' => true,
     'capability_type' => 'post',
-    'menu_icon' => 'dashicons-universal-access-alt',
+    'menu_icon' => 'dashicons-welcome-view-site',
   );
   register_post_type( 'presentation', $args );
   
