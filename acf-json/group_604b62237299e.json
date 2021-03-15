@@ -156,7 +156,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "post"
+                "value": "presenter"
             }
         ]
     ],
@@ -168,5 +168,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1615819341
+    "modified": 1615819852
 }
