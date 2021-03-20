@@ -39,7 +39,7 @@
             ],
             "taxonomy": "",
             "allow_null": 0,
-            "multiple": 1,
+            "multiple": 0,
             "return_format": "object",
             "ui": 1
         },
@@ -224,5 +224,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1615819882
+    "modified": 1615839088
 }
