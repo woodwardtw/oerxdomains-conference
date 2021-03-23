@@ -22,9 +22,63 @@
             "maxlength": ""
         },
         {
+            "key": "field_604b60a7655e3",
+            "label": "Date",
+            "name": "presentation_date",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d\/m\/Y",
+            "return_format": "d\/m\/Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_604b60ba655e4",
+            "label": "Time",
+            "name": "time",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "g:i a",
+            "return_format": "g:i a"
+        },
+        {
+            "key": "field_6059db1863779",
+            "label": "Duration",
+            "name": "duration",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
             "key": "field_604b60fc1de05",
-            "label": "Presenters",
-            "name": "presenters",
+            "label": "Speakers",
+            "name": "speakers",
             "type": "post_object",
             "instructions": "",
             "required": 0,
@@ -35,7 +89,7 @@
                 "id": ""
             },
             "post_type": [
-                "presenter"
+                "speaker"
             ],
             "taxonomy": "",
             "allow_null": 0,
@@ -52,7 +106,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -78,7 +132,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -103,7 +157,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -125,13 +179,14 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
             "choices": {
-                "Domains21": "Domains21",
-                "Something Else": "Something Else"
+                "Channel 1": "Channel 1",
+                "Channel 2": "Channel 2",
+                "Chanel No. 5": "Chanel No. 5"
             },
             "allow_null": 0,
             "other_choice": 0,
@@ -158,39 +213,6 @@
             "toolbar": "full",
             "media_upload": 1,
             "delay": 0
-        },
-        {
-            "key": "field_604b60a7655e3",
-            "label": "Date",
-            "name": "presentation_date",
-            "type": "date_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "display_format": "d\/m\/Y",
-            "return_format": "d\/m\/Y",
-            "first_day": 1
-        },
-        {
-            "key": "field_604b60ba655e4",
-            "label": "Time",
-            "name": "time",
-            "type": "time_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "display_format": "g:i a",
-            "return_format": "g:i a"
         }
     ],
     "location": [
@@ -224,5 +246,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1615839088
+    "modified": 1616501545
 }

@@ -45,6 +45,27 @@ foreach ( $understrap_includes as $file ) {
 	require_once $understrap_inc_dir . $file;
 }
 
+//NAME speaker title to reflect first and last name fields
+function speaker_rename ($post_id){
+  $type = get_post_type($post_id);
+  $last = get_field('last_name');
+  $first = get_field('first_name');
+
+  if ($type === 'speaker'){
+    remove_action( 'save_post', 'speaker_rename' );
+   
+    $my_post = array(
+        'ID'           => $post_id,
+        'post_title'   => $last . ', ' . $first,      
+    );
+
+  // Update the post into the database
+    wp_update_post( $my_post );
+  }
+}
+add_action( 'save_post', 'speaker_rename' );
+
+
 //from https://stackoverflow.com/questions/56473929/how-to-expose-all-the-acf-fields-to-wordpress-rest-api-in-both-pages-and-custom REMEMBER TO CHANGE PREPARE TO REFLECT CUSTOM POST TYPE
 
 function acf_to_rest_api($response, $post, $request) {

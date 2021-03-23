@@ -1,6 +1,6 @@
 {
     "key": "group_604b62237299e",
-    "title": "Presenter",
+    "title": "Speaker",
     "fields": [
         {
             "key": "field_604f708cb0873",
@@ -11,7 +11,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -30,7 +30,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -49,7 +49,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
@@ -67,7 +67,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
@@ -92,7 +92,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
@@ -103,11 +103,11 @@
             "maxlength": ""
         },
         {
-            "key": "field_604b6229a721e",
-            "label": "Website",
-            "name": "website",
+            "key": "field_604b6237a721f",
+            "label": "Twitter",
+            "name": "twitter",
             "type": "url",
-            "instructions": "",
+            "instructions": "Use the full Twitter URL",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -119,15 +119,15 @@
             "placeholder": ""
         },
         {
-            "key": "field_604b6237a721f",
-            "label": "Twitter",
-            "name": "twitter",
+            "key": "field_604b6229a721e",
+            "label": "Website",
+            "name": "website",
             "type": "url",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -143,7 +143,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -156,7 +156,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "presenter"
+                "value": "speaker"
             }
         ]
     ],
@@ -165,8 +165,22 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
     "active": true,
     "description": "",
-    "modified": 1615819852
+    "modified": 1616502636
 }

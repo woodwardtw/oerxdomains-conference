@@ -76,44 +76,44 @@ function create_presentation_cpt() {
 add_action( 'init', 'create_presentation_cpt', 0 );
 
 
-//presenter custom post type
+//Speaker custom post type
 
-// Register Custom Post Type presenter
-// Post Type Key: presenter
+// Register Custom Post Type Speaker
+// Post Type Key: Speaker
 
-function create_presenter_cpt() {
+function create_Speaker_cpt() {
 
   $labels = array(
-    'name' => __( 'Presenters', 'Post Type General Name', 'textdomain' ),
-    'singular_name' => __( 'Presenter', 'Post Type Singular Name', 'textdomain' ),
-    'menu_name' => __( 'Presenter', 'textdomain' ),
-    'name_admin_bar' => __( 'Presenter', 'textdomain' ),
-    'archives' => __( 'Presenter Archives', 'textdomain' ),
-    'attributes' => __( 'Presenter Attributes', 'textdomain' ),
-    'parent_item_colon' => __( 'Presenter:', 'textdomain' ),
-    'all_items' => __( 'All Presenters', 'textdomain' ),
-    'add_new_item' => __( 'Add New Presenter', 'textdomain' ),
+    'name' => __( 'Speakers', 'Post Type General Name', 'textdomain' ),
+    'singular_name' => __( 'Speaker', 'Post Type Singular Name', 'textdomain' ),
+    'menu_name' => __( 'Speaker', 'textdomain' ),
+    'name_admin_bar' => __( 'Speaker', 'textdomain' ),
+    'archives' => __( 'Speaker Archives', 'textdomain' ),
+    'attributes' => __( 'Speaker Attributes', 'textdomain' ),
+    'parent_item_colon' => __( 'Speaker:', 'textdomain' ),
+    'all_items' => __( 'All Speakers', 'textdomain' ),
+    'add_new_item' => __( 'Add New Speaker', 'textdomain' ),
     'add_new' => __( 'Add New', 'textdomain' ),
-    'new_item' => __( 'New Presenter', 'textdomain' ),
-    'edit_item' => __( 'Edit Presenter', 'textdomain' ),
-    'update_item' => __( 'Update Presenter', 'textdomain' ),
-    'view_item' => __( 'View Presenter', 'textdomain' ),
-    'view_items' => __( 'View Presenters', 'textdomain' ),
-    'search_items' => __( 'Search Presenters', 'textdomain' ),
+    'new_item' => __( 'New Speaker', 'textdomain' ),
+    'edit_item' => __( 'Edit Speaker', 'textdomain' ),
+    'update_item' => __( 'Update Speaker', 'textdomain' ),
+    'view_item' => __( 'View Speaker', 'textdomain' ),
+    'view_items' => __( 'View Speakers', 'textdomain' ),
+    'search_items' => __( 'Search Speakers', 'textdomain' ),
     'not_found' => __( 'Not found', 'textdomain' ),
     'not_found_in_trash' => __( 'Not found in Trash', 'textdomain' ),
     'featured_image' => __( 'Featured Image', 'textdomain' ),
     'set_featured_image' => __( 'Set featured image', 'textdomain' ),
     'remove_featured_image' => __( 'Remove featured image', 'textdomain' ),
     'use_featured_image' => __( 'Use as featured image', 'textdomain' ),
-    'insert_into_item' => __( 'Insert into presenter', 'textdomain' ),
-    'uploaded_to_this_item' => __( 'Uploaded to this presenter', 'textdomain' ),
-    'items_list' => __( 'Presenter list', 'textdomain' ),
-    'items_list_navigation' => __( 'Presenter list navigation', 'textdomain' ),
-    'filter_items_list' => __( 'Filter Presenter list', 'textdomain' ),
+    'insert_into_item' => __( 'Insert into Speaker', 'textdomain' ),
+    'uploaded_to_this_item' => __( 'Uploaded to this Speaker', 'textdomain' ),
+    'items_list' => __( 'Speaker list', 'textdomain' ),
+    'items_list_navigation' => __( 'Speaker list navigation', 'textdomain' ),
+    'filter_items_list' => __( 'Filter Speaker list', 'textdomain' ),
   );
   $args = array(
-    'label' => __( 'presenter', 'textdomain' ),
+    'label' => __( 'Speaker', 'textdomain' ),
     'description' => __( '', 'textdomain' ),
     'labels' => $labels,
     'menu_icon' => '',
@@ -134,12 +134,12 @@ function create_presenter_cpt() {
     'capability_type' => 'post',
     'menu_icon' => 'dashicons-universal-access-alt',
   );
-  register_post_type( 'presenter', $args );
+  register_post_type( 'Speaker', $args );
   
   // flush rewrite rules because we changed the permalink structure
   global $wp_rewrite;
   $wp_rewrite->flush_rules();
 }
-add_action( 'init', 'create_presenter_cpt', 0 );
+add_action( 'init', 'create_Speaker_cpt', 0 );
 
 
