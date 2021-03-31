@@ -197,8 +197,8 @@
         },
         {
             "key": "field_604f705f7068a",
-            "label": "Abstract",
-            "name": "abstract",
+            "label": "Session Description",
+            "name": "session_description",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -232,6 +232,44 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_6064d851b83d1",
+            "label": "Session ID",
+            "name": "session_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6064d98bd3401",
+            "label": "Resources and References",
+            "name": "resources_and_references",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -265,5 +303,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1617153463
+    "modified": 1617222050
 }
