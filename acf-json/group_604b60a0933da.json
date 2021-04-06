@@ -51,7 +51,7 @@
                 "class": "",
                 "id": ""
             },
-            "display_format": "g:i a",
+            "display_format": "H:i:s",
             "return_format": "g:i a"
         },
         {
@@ -184,9 +184,9 @@
                 "id": ""
             },
             "choices": {
-                "Channel 1": "Channel 1",
-                "Channel 2": "Channel 2",
-                "Chanel No. 5": "Chanel No. 5"
+                "OER1": "OER1",
+                "OER2": "OER2",
+                "Domains21": "Domains21"
             },
             "allow_null": 0,
             "other_choice": 0,
@@ -303,5 +303,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1617222050
+    "modified": 1617741201
 }
