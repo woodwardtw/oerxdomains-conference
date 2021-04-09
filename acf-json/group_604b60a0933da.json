@@ -127,7 +127,7 @@
             "key": "field_604f6fc0d2545",
             "label": "Presentation Theme",
             "name": "presentation_theme",
-            "type": "radio",
+            "type": "checkbox",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -144,12 +144,12 @@
                 "Theme 5: Open Source Tools: infrastructure, cloud environments, targeted teaching tools": "Theme 5: Open Source Tools: infrastructure, cloud environments, targeted teaching tools",
                 "Theme 6: Wildcard": "Theme 6: Wildcard"
             },
-            "allow_null": 0,
-            "other_choice": 0,
-            "default_value": "",
+            "allow_custom": 0,
+            "default_value": [],
             "layout": "vertical",
+            "toggle": 0,
             "return_format": "value",
-            "save_other_choice": 0
+            "save_custom": 0
         },
         {
             "key": "field_604f6ff618ae7",
@@ -177,7 +177,7 @@
             "key": "field_604f7025d903a",
             "label": "Channel",
             "name": "channel",
-            "type": "radio",
+            "type": "checkbox",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -191,12 +191,12 @@
                 "OER2": "OER2",
                 "Domains21": "Domains21"
             },
-            "allow_null": 0,
-            "other_choice": 0,
-            "default_value": "",
+            "allow_custom": 0,
+            "default_value": [],
             "layout": "vertical",
+            "toggle": 0,
             "return_format": "value",
-            "save_other_choice": 0
+            "save_custom": 0
         },
         {
             "key": "field_604f705f7068a",
@@ -344,5 +344,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1617989598
+    "modified": 1617996713
 }
