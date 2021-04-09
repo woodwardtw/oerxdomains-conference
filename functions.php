@@ -78,3 +78,8 @@ function acf_to_rest_api($response, $post, $request) {
     return $response;
 }
 add_filter('rest_prepare_presentation', 'acf_to_rest_api', 10, 3);
+
+function add_cors_http_header(){
+    header("Access-Control-Allow-Origin: *");
+}
+add_action('init','add_cors_http_header');
