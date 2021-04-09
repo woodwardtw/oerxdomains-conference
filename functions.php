@@ -81,9 +81,8 @@ add_filter('rest_prepare_presentation', 'acf_to_rest_api', 10, 3);
 
 
 //cors from https://stackoverflow.com/questions/25702061/enable-cors-on-json-api-wordpress
-add_action( 'rest_api_init', function () {
-    add_action( 'rest_pre_serve_request', function () {
-        header( 'Access-Control-Allow-Headers: Authorization, Content-Type, X-WP-Wpml-Language', true );
-        header("Access-Control-Allow-Origin: *");
-    } );
-}, 15 );
+add_filter( 'wp_headers', 'send_cors_headers', 11, 1 );
+function send_cors_headers( $headers ) {
+    $headers['Access-Control-Allow-Origin'] = $_SERVER[ 'HTTP_ORIGIN' ];
+    return $headers;
+}
