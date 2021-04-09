@@ -141,7 +141,8 @@
                 "Theme 2: Open Education responses to surveillance technologies and data ownership in education": "Theme 2: Open Education responses to surveillance technologies and data ownership in education",
                 "Theme 3: Open in Action: open teaching, educational practices and resources, how you might be using Domains and other tools": "Theme 3: Open in Action: open teaching, educational practices and resources, how you might be using Domains and other tools",
                 "Theme 4: Shifts in agency and creativity as empowerment of learners and educators": "Theme 4: Shifts in agency and creativity as empowerment of learners and educators",
-                "Theme 5: Open Source Tools: infrastructure, cloud environments, targeted teaching tools": "Theme 5: Open Source Tools: infrastructure, cloud environments, targeted teaching tools"
+                "Theme 5: Open Source Tools: infrastructure, cloud environments, targeted teaching tools": "Theme 5: Open Source Tools: infrastructure, cloud environments, targeted teaching tools",
+                "Theme 6: Wildcard": "Theme 6: Wildcard"
             },
             "allow_null": 0,
             "other_choice": 0,
@@ -272,6 +273,44 @@
             "toolbar": "full",
             "media_upload": 1,
             "delay": 0
+        },
+        {
+            "key": "field_60708fb5284b6",
+            "label": "Session Chair",
+            "name": "session_chair",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60708fc9284b7",
+            "label": "Session Staff member",
+            "name": "session_staff_member",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -305,5 +344,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1617834450
+    "modified": 1617989598
 }
