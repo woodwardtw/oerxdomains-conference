@@ -79,6 +79,18 @@ function acf_to_rest_api($response, $post, $request) {
 }
 add_filter('rest_prepare_presentation', 'acf_to_rest_api', 10, 3);
 
+function acf_to_rest_api_presenter($response, $post, $request) {
+    if (!function_exists('get_fields')) return $response;
+
+    if (isset($post)) {
+        $acf = get_fields($post->id);
+        $response->data['acf'] = $acf;
+    }
+    return $response;
+}
+add_filter('rest_prepare_presenter', 'acf_to_rest_api_presenter', 10, 3);
+
+
 
 //cors from https://stackoverflow.com/questions/25702061/enable-cors-on-json-api-wordpress
 add_filter( 'wp_headers', 'send_cors_headers', 11, 1 );
