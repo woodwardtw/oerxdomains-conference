@@ -45,6 +45,17 @@ foreach ( $understrap_includes as $file ) {
 	require_once $understrap_inc_dir . $file;
 }
 
+if ( ! function_exists('write_log')) {
+   function write_log ( $log )  {
+      if ( is_array( $log ) || is_object( $log ) ) {
+         error_log( print_r( $log, true ) );
+      } else {
+         error_log( $log );
+      }
+   }
+}
+
+
 //NAME speaker title to reflect first and last name fields
 function speaker_rename ($post_id){
   $type = get_post_type($post_id);
@@ -66,14 +77,27 @@ function speaker_rename ($post_id){
 add_action( 'save_post', 'speaker_rename' );
 
 
+// function empty_array_filter($data, $post, $context){
+//    //write_log($data);
+//    $posts = $data->data;
+//    //write_log($posts);
+//    foreach ($posts as $key => $post) {
+//    	# code...
+//    	write_log($post);
+//    }
+//    return $data;
+// }
+// add_filter('rest_prepare_presentation', 'empty_array_filter', 12, 3);
+
+
 //from https://stackoverflow.com/questions/56473929/how-to-expose-all-the-acf-fields-to-wordpress-rest-api-in-both-pages-and-custom REMEMBER TO CHANGE PREPARE TO REFLECT CUSTOM POST TYPE
 
 function acf_to_rest_api($response, $post, $request) {
     if (!function_exists('get_fields')) return $response;
 
     if (isset($post)) {
-        $acf = get_fields($post->id);
-        $response->data['acf'] = $acf;
+        $acf = get_fields($post->id);        
+        $response->data['acf'] = $acf;       
     }
     return $response;
 }
@@ -88,7 +112,7 @@ function acf_to_rest_api_presenter($response, $post, $request) {
     }
     return $response;
 }
-add_filter('rest_prepare_presenter', 'acf_to_rest_api_presenter', 10, 3);
+add_filter('rest_prepare_speaker', 'acf_to_rest_api_presenter', 10, 3);
 
 
 
