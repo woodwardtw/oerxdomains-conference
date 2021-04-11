@@ -35,7 +35,7 @@
                 "id": ""
             },
             "display_format": "m\/d\/Y",
-            "return_format": "d\/m\/Y",
+            "return_format": "m\/d\/Y",
             "first_day": 1
         },
         {
@@ -335,10 +335,10 @@
             "esc_html": 0
         },
         {
-            "key": "field_6071d0259098e",
-            "label": "YouTube Live ID",
-            "name": "youtube_live_id",
-            "type": "text",
+            "key": "field_6072ec0a2808e",
+            "label": "Pick your media path",
+            "name": "pick_your_media_path",
+            "type": "radio",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -347,11 +347,18 @@
                 "class": "",
                 "id": ""
             },
+            "choices": {
+                "YoutubeLiveID": "YoutubeLiveID",
+                "YoutubeID": "YoutubeID",
+                "Discord OpenSpaces1": "Discord OpenSpaces1",
+                "Discord OpenSapces 2": "Discord OpenSapces 2"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
             "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
         },
         {
             "key": "field_6063cdad51c3b",
@@ -360,45 +367,22 @@
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_6071d0319098f",
-            "label": "Discord OpenSpaces1 (voice)",
-            "name": "discord_openspaces1",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_6071d05190990",
-            "label": "Discord OpenSpaces2 (voice)",
-            "name": "discord_openspaces2",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6072ec0a2808e",
+                        "operator": "==",
+                        "value": "YoutubeLiveID"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_6072ec0a2808e",
+                        "operator": "==",
+                        "value": "YoutubeID"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -485,5 +469,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1618071952
+    "modified": 1618144426
 }
