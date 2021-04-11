@@ -372,14 +372,34 @@
                     {
                         "field": "field_6072ec0a2808e",
                         "operator": "==",
-                        "value": "YoutubeLiveID"
+                        "value": "YoutubeID"
                     }
-                ],
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6072ed4240cb4",
+            "label": "YouTube Live ID",
+            "name": "youtube_live_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
                 [
                     {
                         "field": "field_6072ec0a2808e",
                         "operator": "==",
-                        "value": "YoutubeID"
+                        "value": "YoutubeLiveID"
                     }
                 ]
             ],
@@ -469,5 +489,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1618144426
+    "modified": 1618144613
 }
