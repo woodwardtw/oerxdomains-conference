@@ -119,6 +119,6 @@ add_filter('rest_prepare_speaker', 'acf_to_rest_api_presenter', 10, 3);
 //cors from https://stackoverflow.com/questions/25702061/enable-cors-on-json-api-wordpress
 add_filter( 'wp_headers', 'send_cors_headers', 11, 1 );
 function send_cors_headers( $headers ) {
-    $headers['Access-Control-Allow-Origin'] = $_SERVER['HTTP_REFERER'];
+    $headers['Access-Control-Allow-Origin'] = $_SERVER['HTTP_ORIGIN'];
     return $headers;
 }
