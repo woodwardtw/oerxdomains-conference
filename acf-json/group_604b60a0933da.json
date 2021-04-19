@@ -114,6 +114,7 @@
                 "Alt-format": "Alt-format",
                 "Keynote": "Keynote",
                 "Open Spaces": "Open Spaces",
+                "Opening\/closing": "Opening\/closing",
                 "Reflective practice presentations": "Reflective practice presentations",
                 "Research presentations": "Research presentations",
                 "Wildcard": "Wildcard",
@@ -469,5 +470,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1618577971
+    "modified": 1618861390
 }
