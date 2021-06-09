@@ -22,6 +22,31 @@
             "maxlength": ""
         },
         {
+            "key": "field_604f6f78d0ed6",
+            "label": "Presentation Type",
+            "name": "presentation_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Break": "Break",
+                "Day": "Day",
+                "Presentation": "Presentation"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "Presentation",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
             "key": "field_604b60a7655e3",
             "label": "Date",
             "name": "presentation_date",
@@ -30,7 +55,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "33",
+                "width": "25",
                 "class": "",
                 "id": ""
             },
@@ -47,7 +72,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "33",
+                "width": "25",
                 "class": "",
                 "id": ""
             },
@@ -63,7 +88,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "33",
+                "width": "25",
                 "class": "",
                 "id": ""
             },
@@ -82,7 +107,25 @@
             "type": "post_object",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Day"
+                    },
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Break"
+                    },
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Break"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -98,43 +141,26 @@
             "ui": 1
         },
         {
-            "key": "field_604f6f78d0ed6",
-            "label": "Presentation Type",
-            "name": "presentation_type",
-            "type": "radio",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "Alt-format": "Alt-format",
-                "Keynote": "Keynote",
-                "Open Spaces": "Open Spaces",
-                "Opening\/closing": "Opening\/closing",
-                "Reflective practice presentations": "Reflective practice presentations",
-                "Research presentations": "Research presentations",
-                "Wildcard": "Wildcard",
-                "Workshop": "Workshop"
-            },
-            "allow_null": 0,
-            "other_choice": 0,
-            "default_value": "",
-            "layout": "vertical",
-            "return_format": "value",
-            "save_other_choice": 0
-        },
-        {
             "key": "field_604f6fc0d2545",
             "label": "Presentation Theme",
             "name": "presentation_theme",
             "type": "checkbox",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Day"
+                    },
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Break"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "50",
                 "class": "",
@@ -162,7 +188,20 @@
             "type": "taxonomy",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Day"
+                    },
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Break"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "50",
                 "class": "",
@@ -184,7 +223,20 @@
             "type": "checkbox",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Day"
+                    },
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Break"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "50",
                 "class": "",
@@ -209,7 +261,20 @@
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Day"
+                    },
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Break"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -228,7 +293,20 @@
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Day"
+                    },
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Break"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -247,7 +325,20 @@
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Day"
+                    },
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Break"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -266,7 +357,20 @@
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Day"
+                    },
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Break"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "50",
                 "class": "",
@@ -285,7 +389,20 @@
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Day"
+                    },
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Break"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "50",
                 "class": "",
@@ -304,7 +421,20 @@
             "type": "message",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Day"
+                    },
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Break"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -321,7 +451,20 @@
             "type": "radio",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Day"
+                    },
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Break"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -355,6 +498,18 @@
                         "operator": "==",
                         "value": "YoutubeID"
                     }
+                ],
+                [
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Day"
+                    },
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Break"
+                    }
                 ]
             ],
             "wrapper": {
@@ -382,6 +537,18 @@
                         "operator": "==",
                         "value": "YoutubeLiveID"
                     }
+                ],
+                [
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Day"
+                    },
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Break"
+                    }
                 ]
             ],
             "wrapper": {
@@ -402,7 +569,20 @@
             "type": "message",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Day"
+                    },
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Break"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -419,7 +599,20 @@
             "type": "radio",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Day"
+                    },
+                    {
+                        "field": "field_604f6f78d0ed6",
+                        "operator": "!=",
+                        "value": "Break"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -470,5 +663,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1618861390
+    "modified": 1623258282
 }
