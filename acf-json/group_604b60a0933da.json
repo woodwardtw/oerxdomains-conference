@@ -267,11 +267,6 @@
                         "field": "field_604f6f78d0ed6",
                         "operator": "!=",
                         "value": "Day"
-                    },
-                    {
-                        "field": "field_604f6f78d0ed6",
-                        "operator": "!=",
-                        "value": "Break"
                     }
                 ]
             ],
@@ -663,5 +658,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1623258282
+    "modified": 1623972707
 }
